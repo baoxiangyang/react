@@ -6,7 +6,7 @@ var webpack = require('webpack');
 var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 module.exports = {
   entry: {
-    index:[path.resolve(__dirname,"./public/javascripts/main.js"), hotMiddlewareScript]
+    index:[path.resolve(__dirname,"./public/javascripts/myCounter/main.js"), hotMiddlewareScript]
   },
   output: {
     path: path.resolve(__dirname, "./disk/js/"),
