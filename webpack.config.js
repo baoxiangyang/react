@@ -4,6 +4,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
+//postcss-loader 插件自动补全css3
 module.exports = {
   entry: {
     index:[path.resolve(__dirname,"./public/javascripts/myCounter/main.js"), hotMiddlewareScript]
@@ -33,7 +34,7 @@ module.exports = {
       },
       {
         test: /.css?$/,
-        loader: 'style!css'
+        loader: 'style!css!postcss-loader'
       },
       {
         test: /.less?$/,
