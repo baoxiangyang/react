@@ -8,4 +8,7 @@ router.get('/myCounter.html', function(req, res, next) {
 router.get('/counter.html', function(req, res, next) {
   res.render('counter', { title: 'react 学习' });
 });
+router.get('/weui.html', function(req, res, next) {
+  res.render('weui', { title: 'weui 学习' });
+});
 module.exports = router;

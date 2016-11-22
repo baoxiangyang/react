@@ -6,7 +6,7 @@ export default class ActiveBody extends React.Component {
       <div>
       	<p>{number}</p>
         <button onClick={action.add}>Add</button>{' '}
-        <button onClick={action.fell}>Fell</button>
+        <button onClick={action.fell}>Fell</button><br />
       </div>
     )
   }
