@@ -1,10 +1,12 @@
-export function add (){
+export function add (num){
 	return {
-		type:'add'
+		type:'add',
+		num
 	}
 };
-export function fell(){
+export function fell(num){
 	return {
-		type: 'fell'
+		type: 'fell',
+		num
 	}
 };
