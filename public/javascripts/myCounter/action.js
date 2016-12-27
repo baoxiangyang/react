@@ -1,4 +1,4 @@
-export function add (num){
+export function add(num){
 	return {
 		type:'add',
 		num

@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 /* GET home page. */
 router.get('/myCounter.html', function(req, res, next) {
@@ -8,6 +8,9 @@ router.get('/myCounter.html', function(req, res, next) {
 router.get('/counter.html', function(req, res, next) {
   res.render('counter', { title: 'react 学习' });
 });
+router.get('/test.html', function(req, res, next) {
+  res.render('test', { title: 'react 学习' });
+});  
 router.get('/weui.html', function(req, res, next) {
   res.render('weui', { title: 'weui 学习' });
 });

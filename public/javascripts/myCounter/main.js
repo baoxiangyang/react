@@ -11,6 +11,6 @@ let store = createStore(reducer, applyMiddleware(thunk, loggerMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>
-  	<App />
+  	<App title="123"/>
   </Provider>
   , document.getElementById('main'));
