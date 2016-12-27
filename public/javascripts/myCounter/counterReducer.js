@@ -5,6 +5,8 @@ export default function(state={number: 0}, action){
 			return {number: count + action.num};
 		case 'fell':
 			return {number: count - action.num};
+		case 'test':
+			return {number: action.num};
 		default:
 			return state;
 	}

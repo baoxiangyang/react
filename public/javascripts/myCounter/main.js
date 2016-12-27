@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import reducer from './reducer.js';
 import App from './App.js';
-let store = createStore(reducer);
+import thunk from 'redux-thunk';
+import createLogger from 'redux-logger';
+const loggerMiddleware = createLogger();
+let store = createStore(reducer, applyMiddleware(thunk, loggerMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>
