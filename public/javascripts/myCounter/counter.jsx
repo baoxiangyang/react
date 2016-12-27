@@ -3,16 +3,22 @@ export default class ActiveBody extends React.Component {
   constructor(props) {
     super(props);
     this.handlClickAdd = this.handlClickAdd.bind(this);
-    this.handlClickAdd = this.handlClickFell.bind(this);
+    this.handlClickFell = this.handlClickFell.bind(this);
   }
   handlClickAdd() {
-    this.props.action.add(5)
+    this.props.action.add(5);
   }
   handlClickFell() {
-    this.props.action.fell(4)
+    this.props.action.fell(4);
+  }
+  shouldComponentUpdate(next) {
+    if(next.number == this.props.number){
+      return false;
+    }
+    return true;
   }
   render() {
-  	const {action,number} = this.props;
+  	const {number} = this.props;
     return (
       <div>
       	<p>{number}</p>
