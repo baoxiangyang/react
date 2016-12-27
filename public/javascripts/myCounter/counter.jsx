@@ -11,8 +11,8 @@ export default class ActiveBody extends React.Component {
     return (
       <div>
       	<p>{number}</p>
-        <button onClick={this.handlClickAdd.bind(this)}>Add</button>{' '}
-        <button onClick={this.handlClickFell.bind(this)}>Fell</button>
+        <button onClick={action.add}>Add</button>{' '}
+        <button onClick={action.fell}>Fell</button><br />
       </div>
     )
   }

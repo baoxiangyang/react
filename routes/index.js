@@ -10,5 +10,8 @@ router.get('/counter.html', function(req, res, next) {
 });
 router.get('/test.html', function(req, res, next) {
   res.render('test', { title: 'react 学习' });
+});  
+router.get('/weui.html', function(req, res, next) {
+  res.render('weui', { title: 'weui 学习' });
 });
 module.exports = router;
